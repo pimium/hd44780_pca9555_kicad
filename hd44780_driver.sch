@@ -1,0 +1,795 @@
+EESchema Schematic File Version 4
+LIBS:hd44780_driver-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L hd44780_driver-rescue:GND-power #PWR013
+U 1 1 5EE9093C
+P 3900 3900
+F 0 "#PWR013" H 3900 3650 50  0001 C CNN
+F 1 "GND" H 3905 3727 50  0000 C CNN
+F 2 "" H 3900 3900 50  0001 C CNN
+F 3 "" H 3900 3900 50  0001 C CNN
+	1    3900 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L hd44780_driver-rescue:C-Device C2
+U 1 1 5EE917D5
+P 1550 6700
+F 0 "C2" H 1665 6746 50  0000 L CNN
+F 1 "100n" H 1665 6655 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1588 6550 50  0001 C CNN
+F 3 "~" H 1550 6700 50  0001 C CNN
+	1    1550 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L hd44780_driver-rescue:GND-power #PWR02
+U 1 1 5EE91957
+P 1100 7150
+F 0 "#PWR02" H 1100 6900 50  0001 C CNN
+F 1 "GND" H 1105 6977 50  0000 C CNN
+F 2 "" H 1100 7150 50  0001 C CNN
+F 3 "" H 1100 7150 50  0001 C CNN
+	1    1100 7150
+	1    0    0    -1  
+$EndComp
+$Comp
+L hd44780_driver-rescue:GND-power #PWR04
+U 1 1 5EE91997
+P 1550 7150
+F 0 "#PWR04" H 1550 6900 50  0001 C CNN
+F 1 "GND" H 1555 6977 50  0000 C CNN
+F 2 "" H 1550 7150 50  0001 C CNN
+F 3 "" H 1550 7150 50  0001 C CNN
+	1    1550 7150
+	1    0    0    -1  
+$EndComp
+$Comp
+L hd44780_driver-rescue:VCC-power #PWR01
+U 1 1 5EE919BD
+P 1100 6200
+F 0 "#PWR01" H 1100 6050 50  0001 C CNN
+F 1 "VCC" H 1117 6373 50  0000 C CNN
+F 2 "" H 1100 6200 50  0001 C CNN
+F 3 "" H 1100 6200 50  0001 C CNN
+	1    1100 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L hd44780_driver-rescue:VCC-power #PWR03
+U 1 1 5EE919DC
+P 1550 6200
+F 0 "#PWR03" H 1550 6050 50  0001 C CNN
+F 1 "VCC" H 1567 6373 50  0000 C CNN
+F 2 "" H 1550 6200 50  0001 C CNN
+F 3 "" H 1550 6200 50  0001 C CNN
+	1    1550 6200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 6850 1550 7150
+Wire Wire Line
+	1100 7150 1100 7050
+Wire Wire Line
+	1100 6550 1100 6200
+$Comp
+L hd44780_driver-rescue:2N7002-Transistor_FET Q1
+U 1 1 5F080DDE
+P 8550 5600
+F 0 "Q1" H 8755 5646 50  0000 L CNN
+F 1 "2N7002" H 8755 5555 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 8750 5525 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf" H 8550 5600 50  0001 L CNN
+	1    8550 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L hd44780_driver-rescue:HD44780-custom DS1
+U 1 1 5F569AB0
+P 9200 3450
+F 0 "DS1" V 11400 3000 60  0000 R CNN
+F 1 "HD44780" H 10450 2450 60  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x16_P2.54mm_Vertical" H 9200 3450 60  0001 C CNN
+F 3 "" H 9200 3450 60  0000 C CNN
+	1    9200 3450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9200 2150 8600 2150
+Wire Wire Line
+	9200 2250 8600 2250
+Wire Wire Line
+	9200 2350 8600 2350
+Wire Wire Line
+	9200 2450 8600 2450
+Wire Wire Line
+	9200 2950 8600 2950
+Wire Wire Line
+	9200 3050 8600 3050
+Wire Wire Line
+	9200 3150 8600 3150
+Text Label 8600 2450 0    50   ~ 0
+D4
+Text Label 8600 2350 0    50   ~ 0
+D5
+Text Label 8600 2250 0    50   ~ 0
+D6
+Text Label 8600 2150 0    50   ~ 0
+D7
+Text Label 8600 2950 0    50   ~ 0
+EN
+Text Label 8600 3050 0    50   ~ 0
+RW
+Text Label 8600 3150 0    50   ~ 0
+RS
+Text Label 5500 2750 2    50   ~ 0
+EN
+Text Label 5500 2850 2    50   ~ 0
+RW
+Text Label 5500 2950 2    50   ~ 0
+RS
+$Comp
+L hd44780_driver-rescue:GND-power #PWR019
+U 1 1 5F571E2A
+P 8650 3850
+F 0 "#PWR019" H 8650 3600 50  0001 C CNN
+F 1 "GND" H 8655 3677 50  0000 C CNN
+F 2 "" H 8650 3850 50  0001 C CNN
+F 3 "" H 8650 3850 50  0001 C CNN
+	1    8650 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8650 3850 8650 3450
+Wire Wire Line
+	8650 3450 9200 3450
+$Comp
+L hd44780_driver-rescue:VCC-power #PWR018
+U 1 1 5F572A86
+P 8450 3850
+F 0 "#PWR018" H 8450 3700 50  0001 C CNN
+F 1 "VCC" H 8467 4023 50  0000 C CNN
+F 2 "" H 8450 3850 50  0001 C CNN
+F 3 "" H 8450 3850 50  0001 C CNN
+	1    8450 3850
+	-1   0    0    1   
+$EndComp
+$Comp
+L hd44780_driver-rescue:GND-power #PWR020
+U 1 1 5F5745DE
+P 8650 6150
+F 0 "#PWR020" H 8650 5900 50  0001 C CNN
+F 1 "GND" H 8655 5977 50  0000 C CNN
+F 2 "" H 8650 6150 50  0001 C CNN
+F 3 "" H 8650 6150 50  0001 C CNN
+	1    8650 6150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8650 6150 8650 6050
+$Comp
+L hd44780_driver-rescue:R-Device R6
+U 1 1 5F57ACE2
+P 7550 3250
+F 0 "R6" V 7343 3250 50  0000 C CNN
+F 1 "4k7" V 7434 3250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7480 3250 50  0001 C CNN
+F 3 "~" H 7550 3250 50  0001 C CNN
+	1    7550 3250
+	0    1    1    0   
+$EndComp
+$Comp
+L hd44780_driver-rescue:VCC-power #PWR016
+U 1 1 5F57CB5E
+P 8650 4800
+F 0 "#PWR016" H 8650 4650 50  0001 C CNN
+F 1 "VCC" H 8667 4973 50  0000 C CNN
+F 2 "" H 8650 4800 50  0001 C CNN
+F 3 "" H 8650 4800 50  0001 C CNN
+	1    8650 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8350 5600 8000 5600
+Text Label 8000 5600 0    50   ~ 0
+BG
+Text Label 5500 3050 2    50   ~ 0
+BG
+$Comp
+L hd44780_driver-rescue:R-Device R4
+U 1 1 5F56607B
+P 7800 3000
+F 0 "R4" V 7593 3000 50  0000 C CNN
+F 1 "100K" V 7684 3000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7730 3000 50  0001 C CNN
+F 3 "~" H 7800 3000 50  0001 C CNN
+	1    7800 3000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L hd44780_driver-rescue:VCC-power #PWR014
+U 1 1 5F56666B
+P 7800 2750
+F 0 "#PWR014" H 7800 2600 50  0001 C CNN
+F 1 "VCC" H 7817 2923 50  0000 C CNN
+F 2 "" H 7800 2750 50  0001 C CNN
+F 3 "" H 7800 2750 50  0001 C CNN
+	1    7800 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7800 2750 7800 2850
+Wire Wire Line
+	7800 3150 7800 3250
+$Comp
+L hd44780_driver-rescue:R-Device R12
+U 1 1 5F566099
+P 6150 2950
+F 0 "R12" V 6050 2950 50  0000 C CNN
+F 1 "10k" V 6150 2950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6080 2950 50  0001 C CNN
+F 3 "~" H 6150 2950 50  0001 C CNN
+	1    6150 2950
+	-1   0    0    1   
+$EndComp
+$Comp
+L hd44780_driver-rescue:R-Device R5
+U 1 1 5F5687C4
+P 8100 3500
+F 0 "R5" V 7893 3500 50  0000 C CNN
+F 1 "4k7" V 7984 3500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 8030 3500 50  0001 C CNN
+F 3 "~" H 8100 3500 50  0001 C CNN
+	1    8100 3500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8100 3350 8100 3250
+Wire Wire Line
+	8100 3250 7800 3250
+Connection ~ 7800 3250
+Connection ~ 8100 3250
+$Comp
+L hd44780_driver-rescue:C-Device C3
+U 1 1 5F56BFF2
+P 7800 3500
+F 0 "C3" H 7685 3454 50  0000 R CNN
+F 1 "100n" H 7685 3545 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7838 3350 50  0001 C CNN
+F 3 "~" H 7800 3500 50  0001 C CNN
+	1    7800 3500
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	7800 3350 7800 3250
+Wire Wire Line
+	8450 3850 8450 3350
+Wire Wire Line
+	8450 3350 9200 3350
+Wire Wire Line
+	8100 3250 9200 3250
+$Comp
+L hd44780_driver-rescue:GND-power #PWR017
+U 1 1 5F576682
+P 8100 3850
+F 0 "#PWR017" H 8100 3600 50  0001 C CNN
+F 1 "GND" H 8105 3677 50  0000 C CNN
+F 2 "" H 8100 3850 50  0001 C CNN
+F 3 "" H 8100 3850 50  0001 C CNN
+	1    8100 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L hd44780_driver-rescue:GND-power #PWR015
+U 1 1 5F5766B3
+P 7800 3850
+F 0 "#PWR015" H 7800 3600 50  0001 C CNN
+F 1 "GND" H 7805 3677 50  0000 C CNN
+F 2 "" H 7800 3850 50  0001 C CNN
+F 3 "" H 7800 3850 50  0001 C CNN
+	1    7800 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7800 3850 7800 3650
+Wire Wire Line
+	8100 3650 8100 3850
+Wire Wire Line
+	7800 3250 7700 3250
+Wire Wire Line
+	7400 3250 7200 3250
+Text Label 7200 3250 0    50   ~ 0
+VE
+Text Label 5500 3150 2    50   ~ 0
+VE
+$Comp
+L hd44780_driver-rescue:Logo_Open_Hardware_Small-Graphic #LOGO1
+U 1 1 5F579856
+P 6400 7300
+F 0 "#LOGO1" H 6400 7575 50  0001 C CNN
+F 1 "Logo_Open_Hardware_Small" H 6400 7075 50  0001 C CNN
+F 2 "custom_logo:pimium_paprika_7mm" H 6400 7300 50  0001 C CNN
+F 3 "~" H 6400 7300 50  0001 C CNN
+	1    6400 7300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8650 4950 8650 4800
+Wire Wire Line
+	8650 5250 8650 5400
+Wire Wire Line
+	8650 5950 8650 5800
+$Comp
+L hd44780_driver-rescue:Conn_01x02-Connector_Generic J2
+U 1 1 5F97D1C7
+P 9150 5950
+F 0 "J2" H 9229 5942 50  0000 L CNN
+F 1 "BL" H 9229 5851 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 9150 5950 50  0001 C CNN
+F 3 "~" H 9150 5950 50  0001 C CNN
+	1    9150 5950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9200 1950 9100 1950
+Wire Wire Line
+	9200 2050 9100 2050
+Wire Wire Line
+	8950 5950 8650 5950
+Wire Wire Line
+	8950 6050 8650 6050
+Text Label 8750 5950 0    50   ~ 0
+BL+
+Text Label 8750 6050 0    50   ~ 0
+BL-
+Text Label 8600 2050 0    50   ~ 0
+BL-
+Text Label 8600 1950 0    50   ~ 0
+BL+
+$Comp
+L hd44780_driver-rescue:C-Device C1
+U 1 1 5F98B1B2
+P 1100 6700
+F 0 "C1" H 1215 6746 50  0000 L CNN
+F 1 "10u" H 1215 6655 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1138 6550 50  0001 C CNN
+F 3 "~" H 1100 6700 50  0001 C CNN
+	1    1100 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L hd44780_driver-rescue:R-Device R7
+U 1 1 5F98B7A4
+P 8950 1950
+F 0 "R7" V 9000 1800 50  0000 C CNN
+F 1 "R" V 8950 2000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 8880 1950 50  0001 C CNN
+F 3 "~" H 8950 1950 50  0001 C CNN
+	1    8950 1950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8800 1950 8600 1950
+$Comp
+L hd44780_driver-rescue:R-Device R8
+U 1 1 5F98B9DC
+P 8950 2050
+F 0 "R8" V 9000 1900 50  0000 C CNN
+F 1 "R" V 8950 2100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 8880 2050 50  0001 C CNN
+F 3 "~" H 8950 2050 50  0001 C CNN
+	1    8950 2050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8800 2050 8600 2050
+$Comp
+L hd44780_driver-rescue:PCA9555APW-custom_library U1
+U 1 1 615B9980
+P 4750 2650
+F 0 "U1" H 4750 3740 60  0000 C CNN
+F 1 "PCA9555APW" H 4750 3634 60  0000 C CNN
+F 2 "Package_SO:TSSOP-24_4.4x7.8mm_P0.65mm" H 4250 3250 60  0001 C CNN
+F 3 "http://www.nxp.com/documents/data_sheet/PCA9555A.pdf" H 4750 3634 60  0001 C CNN
+	1    4750 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 1850 5250 1850
+Wire Wire Line
+	5500 1950 5250 1950
+Wire Wire Line
+	5500 2050 5250 2050
+Wire Wire Line
+	5500 2150 5250 2150
+Wire Wire Line
+	5500 2250 5250 2250
+Wire Wire Line
+	5500 2350 5250 2350
+Wire Wire Line
+	5500 2450 5250 2450
+Wire Wire Line
+	5500 2550 5250 2550
+Wire Wire Line
+	5500 2750 5250 2750
+Wire Wire Line
+	5500 2850 5250 2850
+Wire Wire Line
+	5500 2950 5250 2950
+Wire Wire Line
+	5500 3050 5250 3050
+Wire Wire Line
+	5500 3150 5250 3150
+Text Label 5500 1850 2    50   ~ 0
+D0
+Text Label 5500 1950 2    50   ~ 0
+D1
+Text Label 5500 2050 2    50   ~ 0
+D2
+Text Label 5500 2150 2    50   ~ 0
+D3
+Text Label 5500 2250 2    50   ~ 0
+D4
+Text Label 5500 2350 2    50   ~ 0
+D5
+Text Label 5500 2450 2    50   ~ 0
+D6
+Text Label 5500 2550 2    50   ~ 0
+D7
+Wire Wire Line
+	4100 3450 4250 3450
+Wire Wire Line
+	3900 3450 3900 3900
+$Comp
+L hd44780_driver-rescue:R-Device R11
+U 1 1 615D1F40
+P 4100 2100
+F 0 "R11" V 4200 2100 50  0000 C CNN
+F 1 "10k" V 4100 2100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4030 2100 50  0001 C CNN
+F 3 "~" H 4100 2100 50  0001 C CNN
+	1    4100 2100
+	1    0    0    1   
+$EndComp
+$Comp
+L hd44780_driver-rescue:R-Device R9
+U 1 1 615D44AE
+P 3700 2100
+F 0 "R9" V 3800 2100 50  0000 C CNN
+F 1 "10k" V 3700 2100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3630 2100 50  0001 C CNN
+F 3 "~" H 3700 2100 50  0001 C CNN
+	1    3700 2100
+	1    0    0    1   
+$EndComp
+$Comp
+L hd44780_driver-rescue:R-Device R10
+U 1 1 615D44EC
+P 3900 2100
+F 0 "R10" V 4000 2100 50  0000 C CNN
+F 1 "10k" V 3900 2100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3830 2100 50  0001 C CNN
+F 3 "~" H 3900 2100 50  0001 C CNN
+	1    3900 2100
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	4250 2350 4100 2350
+Wire Wire Line
+	4100 2350 4100 2250
+Wire Wire Line
+	3900 2250 3900 2450
+Wire Wire Line
+	3900 2450 4250 2450
+Wire Wire Line
+	4250 2550 3700 2550
+Wire Wire Line
+	3700 2550 3700 2250
+Wire Wire Line
+	3700 1950 3700 1850
+Wire Wire Line
+	3700 1850 3900 1850
+Wire Wire Line
+	4100 1850 4100 1950
+Connection ~ 4100 1850
+Wire Wire Line
+	4100 1850 4250 1850
+Wire Wire Line
+	3900 1950 3900 1850
+Connection ~ 3900 1850
+Wire Wire Line
+	3900 1850 4100 1850
+$Comp
+L hd44780_driver-rescue:R-Device R2
+U 1 1 615E3C48
+P 3900 3200
+F 0 "R2" V 4000 3200 50  0000 C CNN
+F 1 "0" V 3900 3200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3830 3200 50  0001 C CNN
+F 3 "~" H 3900 3200 50  0001 C CNN
+	1    3900 3200
+	1    0    0    1   
+$EndComp
+$Comp
+L hd44780_driver-rescue:R-Device R1
+U 1 1 615E3CE5
+P 3700 3200
+F 0 "R1" V 3800 3200 50  0000 C CNN
+F 1 "0" V 3700 3200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3630 3200 50  0001 C CNN
+F 3 "~" H 3700 3200 50  0001 C CNN
+	1    3700 3200
+	1    0    0    1   
+$EndComp
+$Comp
+L hd44780_driver-rescue:R-Device R3
+U 1 1 615E3D2D
+P 4100 3200
+F 0 "R3" V 4200 3200 50  0000 C CNN
+F 1 "0" V 4100 3200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4030 3200 50  0001 C CNN
+F 3 "~" H 4100 3200 50  0001 C CNN
+	1    4100 3200
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	4100 3350 4100 3450
+Connection ~ 4100 3450
+Wire Wire Line
+	4100 3450 3900 3450
+Wire Wire Line
+	3900 3450 3900 3350
+Wire Wire Line
+	3700 3350 3700 3450
+Wire Wire Line
+	3700 3450 3900 3450
+Connection ~ 3900 3450
+Wire Wire Line
+	3900 3050 3900 2850
+Wire Wire Line
+	3900 2850 4250 2850
+Wire Wire Line
+	4250 2750 3700 2750
+Wire Wire Line
+	3700 2750 3700 3050
+Wire Wire Line
+	4100 3050 4100 2950
+Wire Wire Line
+	4100 2950 4250 2950
+$Comp
+L hd44780_driver-rescue:VCC-power #PWR07
+U 1 1 615F4626
+P 3900 1450
+F 0 "#PWR07" H 3900 1300 50  0001 C CNN
+F 1 "VCC" H 3917 1623 50  0000 C CNN
+F 2 "" H 3900 1450 50  0001 C CNN
+F 3 "" H 3900 1450 50  0001 C CNN
+	1    3900 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 1450 3900 1850
+Wire Wire Line
+	9200 2550 8600 2550
+Wire Wire Line
+	9200 2650 8600 2650
+Wire Wire Line
+	9200 2750 8600 2750
+Wire Wire Line
+	9200 2850 8600 2850
+Text Label 8600 2550 0    50   ~ 0
+D3
+Text Label 8600 2650 0    50   ~ 0
+D2
+Text Label 8600 2750 0    50   ~ 0
+D1
+Text Label 8600 2850 0    50   ~ 0
+D0
+Wire Wire Line
+	1150 2150 1450 2150
+Wire Wire Line
+	1450 1950 1150 1950
+Wire Wire Line
+	1350 1550 1150 1550
+Wire Wire Line
+	1350 1200 1350 1550
+$Comp
+L hd44780_driver-rescue:VCC-power #PWR05
+U 1 1 5F02A73B
+P 1350 1200
+F 0 "#PWR05" H 1350 1050 50  0001 C CNN
+F 1 "VCC" H 1367 1373 50  0000 C CNN
+F 2 "" H 1350 1200 50  0001 C CNN
+F 3 "" H 1350 1200 50  0001 C CNN
+	1    1350 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 2250 1150 2250
+Wire Wire Line
+	1350 2500 1350 2250
+$Comp
+L hd44780_driver-rescue:GND-power #PWR06
+U 1 1 5F02A733
+P 1350 2500
+F 0 "#PWR06" H 1350 2250 50  0001 C CNN
+F 1 "GND" H 1355 2327 50  0000 C CNN
+F 2 "" H 1350 2500 50  0001 C CNN
+F 3 "" H 1350 2500 50  0001 C CNN
+	1    1350 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x08 J3
+U 1 1 5F02A72C
+P 950 1950
+F 0 "J3" H 950 2350 50  0000 C CNN
+F 1 "Conn_01x08" V 1050 1950 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 950 1950 50  0001 C CNN
+F 3 "~" H 950 1950 50  0001 C CNN
+	1    950  1950
+	-1   0    0    1   
+$EndComp
+$Comp
+L hd44780_driver-rescue:R-Device R15
+U 1 1 61615E80
+P 8650 5100
+F 0 "R15" V 8750 5100 50  0000 C CNN
+F 1 "330" V 8650 5100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 8580 5100 50  0001 C CNN
+F 3 "~" H 8650 5100 50  0001 C CNN
+	1    8650 5100
+	1    0    0    1   
+$EndComp
+$Comp
+L hd44780_driver-rescue:R-Device R14
+U 1 1 61615E87
+P 6550 2950
+F 0 "R14" V 6650 2950 50  0000 C CNN
+F 1 "10k" V 6550 2950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6480 2950 50  0001 C CNN
+F 3 "~" H 6550 2950 50  0001 C CNN
+	1    6550 2950
+	1    0    0    1   
+$EndComp
+$Comp
+L hd44780_driver-rescue:R-Device R13
+U 1 1 61615E8E
+P 6350 2950
+F 0 "R13" V 6450 2950 50  0000 C CNN
+F 1 "10k" V 6350 2950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6280 2950 50  0001 C CNN
+F 3 "~" H 6350 2950 50  0001 C CNN
+	1    6350 2950
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	6150 2800 6150 2700
+Wire Wire Line
+	6150 2700 6350 2700
+Wire Wire Line
+	6550 2700 6550 2800
+Wire Wire Line
+	6350 2800 6350 2700
+Connection ~ 6350 2700
+Wire Wire Line
+	6350 2700 6550 2700
+$Comp
+L hd44780_driver-rescue:VCC-power #PWR08
+U 1 1 61615E9D
+P 6350 2300
+F 0 "#PWR08" H 6350 2150 50  0001 C CNN
+F 1 "VCC" H 6367 2473 50  0000 C CNN
+F 2 "" H 6350 2300 50  0001 C CNN
+F 3 "" H 6350 2300 50  0001 C CNN
+	1    6350 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 2300 6350 2700
+Wire Wire Line
+	6150 3250 6150 3100
+Wire Wire Line
+	5250 3250 6150 3250
+Wire Wire Line
+	6350 3100 6350 3350
+Wire Wire Line
+	5250 3350 6350 3350
+Wire Wire Line
+	6550 3450 6550 3100
+Wire Wire Line
+	5250 3450 6550 3450
+Text Label 5500 3250 2    50   ~ 0
+BUT0
+Text Label 5500 3350 2    50   ~ 0
+BUT1
+Text Label 5500 3450 2    50   ~ 0
+BUT2
+Wire Wire Line
+	4100 2350 3400 2350
+Connection ~ 4100 2350
+Wire Wire Line
+	3400 2450 3900 2450
+Connection ~ 3900 2450
+Wire Wire Line
+	3700 2550 3400 2550
+Connection ~ 3700 2550
+Text Label 3400 2350 0    50   ~ 0
+SCL
+Text Label 3400 2450 0    50   ~ 0
+SDA
+Text Label 3400 2550 0    50   ~ 0
+INT
+Wire Wire Line
+	1150 2050 1450 2050
+Text Label 1450 2050 2    50   ~ 0
+SCL
+Text Label 1450 2150 2    50   ~ 0
+SDA
+Text Label 1450 1950 2    50   ~ 0
+INT
+Wire Wire Line
+	1150 1650 1450 1650
+Text Label 1450 1650 2    50   ~ 0
+BUT0
+Text Label 1450 1750 2    50   ~ 0
+BUT1
+Text Label 1450 1850 2    50   ~ 0
+BUT2
+Wire Wire Line
+	1150 1750 1450 1750
+Wire Wire Line
+	1150 1850 1450 1850
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 615BC440
+P 1900 6200
+F 0 "#FLG0101" H 1900 6275 50  0001 C CNN
+F 1 "PWR_FLAG" H 1900 6374 50  0000 C CNN
+F 2 "" H 1900 6200 50  0001 C CNN
+F 3 "~" H 1900 6200 50  0001 C CNN
+	1    1900 6200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 6200 1900 6300
+Wire Wire Line
+	1550 6200 1550 6300
+Wire Wire Line
+	1550 6300 1900 6300
+Connection ~ 1550 6300
+Wire Wire Line
+	1550 6300 1550 6550
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 615C7668
+P 750 6950
+F 0 "#FLG0102" H 750 7025 50  0001 C CNN
+F 1 "PWR_FLAG" H 750 7124 50  0000 C CNN
+F 2 "" H 750 6950 50  0001 C CNN
+F 3 "~" H 750 6950 50  0001 C CNN
+	1    750  6950
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	750  6950 750  7050
+Wire Wire Line
+	1100 7050 750  7050
+Connection ~ 1100 7050
+Wire Wire Line
+	1100 7050 1100 6850
+$EndSCHEMATC
