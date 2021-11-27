@@ -11,7 +11,7 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 2507)
+    (start_pass_no 3067)
     (layer_rule F.Cu
       (active on)
       (preferred_direction horizontal)
@@ -29,11 +29,8 @@
     (width 250.0)
     (clear 200.2)
     (clear 125.0 (type smd_to_turn_gap))
-    (clear 203.4 (type default_pwr))
     (clear 50.0 (type smd_smd))
-    (clear 203.4 (type smd_pwr))
-    (clear 203.4 (type "kicad_default"_pwr))
-    (clear 203.4 (type pwr_pwr))
+    (clear 198.2 (type pwr_pwr))
   )
   (padstack "Via[0-1]_800:400_um"
     (shape
@@ -91,7 +88,7 @@
     (clearance_class pwr)
     (via_rule pwr)
     (rule
-      (width 406.4)
+      (width 254.0)
     )
     (circuit 
       (use_layer F.Cu B.Cu)
